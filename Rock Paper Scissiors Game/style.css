@@ -1,0 +1,73 @@
+*{
+  padding: 0;
+  margin: 0;
+  background-color: purple;
+  text-align: center;
+}
+
+h1{
+  background-color: grey;
+  color: white;
+  height: 5rem; 
+  /* for center we will give line height equal to height of text */
+  line-height: 5rem;
+}
+
+.choice{
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.choice:hover{
+  opacity: 0.3;
+  cursor: pointer;
+  background-color: purple;
+}
+
+img{
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  cursor: pointer;
+}
+/* for making the img in one line we have to give display flex of the continer of the img */
+
+.choices{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin: 5rem;
+}
+
+.score-board{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  gap: 5rem;
+}
+
+#user-score, #comp-score{
+  font-size: 4rem;
+}
+
+.msg-container{
+
+  margin-top: 5rem;;
+}
+
+#msg{
+  background-color: purple;
+  font-size: 2rem;
+  border-radius: 5px;
+  color: white;
+  padding: 10px;
+
+  /* for making use the required space we use inline function */
+  display: inline;
+}
