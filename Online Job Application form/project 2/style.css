@@ -1,0 +1,41 @@
+body{
+  font-family: "Comic Sans MS",sans-serif;
+  background-color: lightgreen;
+  margin: 0px;
+}
+
+h2{
+  background-color: forestgreen;
+  text-align: center;
+  padding: 10px;
+  color: white;
+}
+
+td{
+  padding: 7px;
+}
+input{
+  height: 25px;
+  border-radius: 10px;
+  border: none;
+}
+input:focus, textarea:focus{
+  outline: none;
+  border: 2px solid purple;
+}
+textarea{
+  border-radius: 10px;
+}
+.button{
+ background-color: forestgreen;
+ color: white;
+ font-size: 20px;
+ padding: 0px 25px;
+ border: none;
+ margin-bottom: 20px;
+}
+
+.button:hover{
+  cursor: pointer;
+  box-shadow: 5px 5px 5px red;
+}
