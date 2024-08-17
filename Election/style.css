@@ -1,0 +1,203 @@
+html,body{
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Lato",sans-serif;
+  font-weight: 400;
+  line-height: 1.8rem;
+  color: #666;
+  background-color: #313534;
+}
+
+.png1{
+  background-image: url(image1.jpg);
+  min-height: 100%;
+}
+.png3{
+  background-image: url(image3.jpg);
+  min-height: 400px;
+}
+
+.png2{
+  background-image: url(image4.jpg);
+  min-height: 400px;
+}
+
+.png1,.png3, .png2{
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+}
+
+.ptext{
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-size: 20px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+}
+.textbg{
+  background-color: #313534;
+  color:#DDFFF7;
+  padding: 20px;
+  border: 4px solid #93E1D8;
+  border-radius: 10px;
+}
+.section{
+  text-align: center;
+  text-transform: uppercase;
+  margin: 50px 80px;
+}
+.section-light{
+  color: gray;
+  background-color: aliceblue;
+  text-align: justify;
+}
+.section-dark{
+  background-color: grey;
+  color: white;
+  text-align: justify;
+}
+
+h1,h2,h3{
+  margin: 5px 5px;
+  border: 4px solid #93E1D8;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.section-dark img {
+  display: flex;
+  max-width: 100%; /* Ensure the image scales with the container */
+  height: auto;    /* Maintain aspect ratio */
+  display: block;  /* Remove any default inline spacing */
+  margin: 0 auto;  /* Center the image horizontally */
+}
+.section-light img{
+  display: flex;
+  max-width: 100%; /* Ensure the image scales with the container */
+  height: auto;    /* Maintain aspect ratio */
+  display: block;  /* Remove any default inline spacing */
+  margin: 0 auto;  /* Center the image horizontally */
+
+}
+
+/* Responsive text sizing */
+@media (max-width: 768px) {
+  .section-light h2 {
+      font-size: 1.5em; /* Slightly smaller font on tablets and small screens */
+  }
+}
+
+/* Further adjustments for small devices */
+@media (max-width: 480px) {
+  .section-light {
+      padding: 10px;
+  }
+
+  .section-light h2 {
+      font-size: 1.2em; /* Smaller font size for mobile screens */
+  }
+}
+
+
+/* css for the from; */
+
+.container{
+  max-width: 900px;
+  margin:0 auto;
+}
+
+.applybox{
+  max-width: 600px;
+  padding: 20px;
+  background-color: white;
+  margin:  0 auto;
+  margin-top: 50px;
+  box-shadow: 4px 3px 5px rgba(1,1,1,0.6);
+  border-radius: 10px;
+}
+
+
+.small{
+  font-size: 20px;
+}
+
+.form_container{
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit , minmax(200px,1fr));
+  grid-gap: 20px;
+}
+
+.form_control{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+label{
+  font-size: 15px;
+}
+
+input,select,textarea{
+  margin: 5px;
+  padding: 5px 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+input:focus{
+  outline-color: purple;
+}
+
+.btn{
+  display: flex;
+  justify-content: end;
+  margin-top: 20px;
+}
+
+button{
+  background-color: purple;
+  color: white;
+  border: 2px solid gray;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: .5s ease-in;
+}
+
+button:hover{
+  background-color: lightcoral;
+  border: 2px dotted red;
+  color: black;
+  transition: .5s  ease-out;
+}
+
+.textarea_control{
+  display: grid;
+  grid-column: 1/span 2;
+}
+
+@media (max-width:460px){
+  .textarea_control{
+    grid-column: 1/span 1;
+  }
+}
+@media(max-width:450px){
+  .ptext{
+    font-size: 1.2rem;
+    flex-wrap: wrap;
+  }
+}
+
+
+
