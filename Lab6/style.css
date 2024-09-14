@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4B2840;
+}
+#questionBox {
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.box{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+img{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+  }
+
+.container {
+  width: 40rem;
+  box-shadow: 0px 0px 5px grey;
+  display: flex;
+  background-color: #EEABC4;
+  border-radius: 10px;
+  overflow: hidden;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.col {
+  text-align: justify;
+  padding: 15px;
+  width: 95%;
+}
+
+button {
+  width: 100%;
+  background-color: #E15A97;
+  transition: 0.5s;
+  color: white;
+  outline: none;
+  border: none;
+  font-size: 25px;
+  display: block;
+  padding: 10px;
+  cursor: pointer;
+  
+}
+
+button:hover {
+  background-color: #861388;
+}
+
+.box {
+  box-shadow: 0px -1px 1px grey;
+  width: 100%;
+}
+#first{
+  font-size: 34px;
+  font-weight: 500;
+}
+
+.js1{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+/* Optional: Add specific styling for Restart if needed */
+.restart-btn {
+  background-color: #007BFF;
+}
+
