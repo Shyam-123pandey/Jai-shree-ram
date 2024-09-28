@@ -1,0 +1,18 @@
+const getColor = () => {
+    //Hex Code
+    const randomNumber = Math.floor(Math.random() * 16777215);
+    const randomCode = "#" + randomNumber.toString(16);
+    document.body.style.backgroundColor = randomCode;
+    document.getElementById("color-code").innerText = randomCode;
+
+    //Copy to clipboard
+    navigator.clipboard.writeText(randomCode);
+    
+    // event call
+    document.querySelector("#btn").addEventListener("click",getColor);
+
+}
+
+getColor();
+//call fuction at 1000 sec 
+setInterval(getColor, 1000);
