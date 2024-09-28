@@ -1,0 +1,28 @@
+const endDate = "25 March 2024 19:50 AM";
+
+document.querySelector("#end-date").innerText = endDate;
+const inputs = document.querySelectorAll("input");
+
+function clock(){
+  const end = new Date(endDate);
+  const now = new Date();
+  console.log(end,now);
+  const diff = (now - end)/1000;
+  console.log(diff);
+  // convert into days;
+  if(diff < 0) return;
+
+  inputs[0].value = Math.floor(diff/3600/24);
+  // convert into hours;
+  inputs[1].value = Math.floor(diff/3600)%24;
+ //convert into minutes;
+  inputs[2].value = Math.floor(diff/60)%60;
+  //convert into seconds;
+  inputs[3].value = Math.floor(diff)%60;
+
+}
+
+clock();
+setInterval(() =>{
+  clock();
+}, 1000)
